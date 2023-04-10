@@ -62,6 +62,37 @@
   backdrop-filter: blur(120px)
   border: 1px solid transparent
   color: #FFFFFF
+  margin-right: 0
 
 .header-option-started:hover
   background-color: #C0C000
+
+// responsive for mobile device.
+@media screen and (max-width: 750px)
+  .header-option-token
+    display: none
+
+  .header
+    height: 55px
+
+  .header-logo
+    width: 123.21px
+    height: 20px
+    left: 14px
+    top: 20px
+
+  .header-option
+    right: 14px
+    top: 10px
+
+  %header-option-btn
+    font-size: 14px
+    margin-right: 10px
+
+  .header-option-logIn
+    width: 63px
+    height: 34px
+
+  .header-option-started
+    width: 100px
+    height: 34px
