@@ -1,0 +1,67 @@
+.header
+  width: 100%
+  height: 86px
+  background-color: rgba(255, 255, 255, 0.9)
+  border-bottom: 1px solid #E6E8EC
+  position: relative
+
+.header-logo
+  cursor: pointer
+  position: absolute
+  width: 184.81px
+  height: 30px
+  left: 32px
+  top: 28px
+
+.header-logo img
+  width: 100%
+  height: 100%
+
+.header-option
+  display: flex
+  position: absolute
+  right: 32px
+  top: 18px
+
+%header-option-btn
+  width: 142px
+  height: 50px
+  border-radius: 12px
+  font-family: 'Neue Machina'
+  font-style: normal
+  font-weight: 700
+  font-size: 18px
+  line-height: 24px
+  margin-right: 24px
+  text-align: center
+  cursor: pointer
+
+.header-option-token
+  @extend %header-option-btn
+  background: #F7F7F7
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  color: #8F92A1
+
+.header-option-token:hover
+  background-color: #F0F0F0
+
+.header-option-logIn
+  @extend %header-option-btn
+  background-color: rgba(255, 255, 255, 0.9)
+  backdrop-filter: blur(215px)
+  border: 1px solid #C1D45D
+  color: #C1D45D
+
+.header-option-logIn:hover
+  background-color: #F7F7F7
+
+.header-option-started
+  @extend %header-option-btn
+  background: #C1D45D
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  color: #FFFFFF
+
+.header-option-started:hover
+  background-color: #C0C000
