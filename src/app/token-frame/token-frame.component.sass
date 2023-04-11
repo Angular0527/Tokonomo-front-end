@@ -1,0 +1,52 @@
+.token-frame-area
+  width: auto
+  height: 46px
+  display: flex
+  background: rgba(0, 190, 145, 0.06)
+  backdrop-filter: blur(215px)
+  margin-top: 30px
+
+.token-frame-label
+  background: rgba(0, 190, 145, 0.1)
+  backdrop-filter: blur(215px)
+  display: flex
+  padding: 11px 32px
+  margin-right: 17px
+
+.token-frame-label-vector
+  width: 24px
+  height: 24px
+  background: rgba(0, 190, 145, 0.2)
+  border-radius: 8px
+  box-sizing: border-box
+  margin-right: 8px
+  padding: 4px
+
+%token-frame-font
+  font-family: 'Neue Machina'
+  font-style: normal
+  font-weight: 700
+  font-size: 16px
+  line-height: 150%
+
+.token-frame-label span
+  @extend %token-frame-font
+  color: #00BE91
+
+.token-item
+  width: auto
+  height: 24px
+  cursor: pointer
+  padding: 12px 17px
+
+.token-item:hover
+  background: rgba(0, 190, 145, 0.1)
+
+.token-item-id
+  @extend %token-frame-font
+  color: #7AB3A5
+  margin-right: 8px
+
+.token-item-name
+  @extend %token-frame-font
+  color: #00BE91
