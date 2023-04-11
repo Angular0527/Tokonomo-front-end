@@ -10,4 +10,6 @@ export class HeaderComponent {
     url: "../../assets/logo.svg",
     alt: "site logo"
   }
+
+
 }
