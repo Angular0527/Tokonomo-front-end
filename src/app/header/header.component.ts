@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   logo_info = {
-    url: "logo.png",
+    url: "../../assets/logo.svg",
     alt: "site logo"
   }
 }
