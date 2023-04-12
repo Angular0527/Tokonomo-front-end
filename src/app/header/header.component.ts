@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CONSTANT } from '../../constant/constant'
 
 @Component({
   selector: 'app-header',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class HeaderComponent {
   logo_info = {
-    url: "../../assets/logo.svg",
-    alt: "site logo"
+    url: CONSTANT.LOGO_INFO_URL,
+    alt: CONSTANT.LOGO_INFO_ALT
   }
 }
