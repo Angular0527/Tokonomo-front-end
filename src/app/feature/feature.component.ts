@@ -6,11 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./feature.component.sass']
 })
 export class FeatureComponent {
-  feature_desc = {
-    first: "Features that make the fundraising process",
-    second: "simple as 1-2-3"
-  };
-
   feature_portfolio = {
     url: "../../assets/fi_feature_investor_portfolio.svg",
     alt: "portfolio for investor"
@@ -21,16 +16,18 @@ export class FeatureComponent {
     alt: "chat for investor"
   };
 
-  feature_portfolio_desc = {
-    title: "Portfolio Tracking",
-    desc1: "Track changes in your assets",
-    desc2: "from investments made"
-  }
+  feature_kyc = {
+    url: "../../assets/fi_kyc.svg",
+    alt: "image of kyc"
+  };
 
-  feature_chat_desc = {
-    title: "Automatic projects scanner",
-    desc1: "Estimate the risk of project's",
-    desc2: "fraud based on mathematical",
-    desc3: "factors before investing in"
-  }
+  feature_$ = {
+    url: "../../assets/fi_feature_$.svg",
+    alt: "image of $"
+  };
+
+  feature_lock = {
+    url: "../../assets/fi_feature_lock.svg",
+    alt: "image of lock"
+  };
 }
