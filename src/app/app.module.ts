@@ -8,6 +8,8 @@ import { HeaderComponent } from './header/header.component';
 import { TokenFrameComponent } from './token-frame/token-frame.component';
 import { StartComponent } from './start/start.component';
 import { ProjectComponent } from './project/project.component';
+import { FeatureComponent } from './feature/feature.component';
+import { ConnectionComponent } from './connection/connection.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { ProjectComponent } from './project/project.component';
     HeaderComponent,
     TokenFrameComponent,
     StartComponent,
-    ProjectComponent
+    ProjectComponent,
+    FeatureComponent,
+    ConnectionComponent
   ],
   imports: [
     BrowserModule,

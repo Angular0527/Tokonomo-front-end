@@ -1,0 +1,42 @@
+<div class="feature-description">
+  {{feature_desc.first}}<br>{{feature_desc.second}}
+</div>
+
+<div class="feature-container">
+  <div class="feature-investor">
+    <div class="feature-investor-label">For Investors:</div>
+
+      <div class="feature-investor-process">
+      <div class="feature-investor-portfolio-img">
+        <img [src]="feature_portfolio.url" [alt]="feature_portfolio.alt">
+      </div>
+
+      <div class="feature-investor-portfolio-title">{{feature_portfolio_desc.title}}</div>
+
+      <div class="feature-investor-portfolio-desc1">{{feature_portfolio_desc.desc1}}</div>
+
+      <div class="feature-investor-portfolio-desc2">{{feature_portfolio_desc.desc2}}</div>
+
+      <div class="feature-investor-chat">
+        <img [src]="feature_chat.url" [alt]="feature_chat.alt">
+      </div>
+
+      <div class="feature-investor-chat-title">{{feature_chat_desc.title}}</div>
+
+      <div class="feature-investor-chat-desc1">{{feature_chat_desc.desc1}}</div>
+
+      <div class="feature-investor-chat-desc2">{{feature_chat_desc.desc2}}</div>
+
+      <div class="feature-investor-chat-desc3">{{feature_chat_desc.desc3}}</div>
+
+      <div class="feature-connection">
+        <app-connection></app-connection>
+      </div>
+    </div>
+  </div>
+
+  <div class="feature-teams">
+
+  </div>
+</div>
+
