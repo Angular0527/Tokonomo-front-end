@@ -1,0 +1,19 @@
+<div class="project-text">
+  <span>{{project_text.first}}</span>
+  <br>
+  <span>{{project_text.second}}</span>
+
+  <img [src]="project_rocket.url" [alt]="project_rocket.alt">
+</div>
+
+<div class="project-item-area">
+  <div class="project-item" *ngFor="let item of project_item_info">
+    <img [src]="item.project_item_img.url" [alt]="item.project_item_img.alt">
+
+    <div>{{item.project_item_description.first}}<br>{{item.project_item_description.second}}</div>
+
+    <div>
+      <button>{{item.project_item_button_label}}</button>
+    </div>
+  </div>
+</div>

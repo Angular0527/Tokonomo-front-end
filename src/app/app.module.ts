@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { TokenFrameComponent } from './token-frame/token-frame.component';
 import { StartComponent } from './start/start.component';
+import { ProjectComponent } from './project/project.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     TokenFrameComponent,
-    StartComponent
+    StartComponent,
+    ProjectComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,73 @@
+%project-font
+  font-family: 'Neue Machina'
+  font-style: normal
+  font-weight: 700
+  text-align: center
+  color: #363642
+
+.project-text
+  @extend %project-font
+  width: 759px
+  height: 120px
+  margin: 222.81px auto 0 auto
+  font-size: 40px
+  line-height: 150%
+  position: relative
+
+.project-text img
+  width: 40px
+  height: 40px
+  position: absolute
+  right: 24%
+  top: 5%
+
+.project-item-area
+  display: flex
+  width: 880px
+  margin: 53px auto 0
+
+.project-item
+  width: 400px
+  height: 570px
+  background: rgba(255, 255, 255, 0.9)
+  backdrop-filter: blur(120px)
+  border-radius: 26px
+
+.project-item:first-child
+  margin-right: 80px
+
+.project-item img
+  width: 400px
+  height: 400px
+  background-color: rgb(238, 249, 251)
+  border-radius: 12px
+
+.project-item div
+  @extend %project-font
+  width: 100%
+  font-weight: 500
+  font-size: 22px
+  line-height: 150%
+
+.project-item div:last-child
+  width: 100%
+  display: flex
+
+.project-item div button
+  @extend %project-font
+  width: 340px
+  height: 63px
+  background: #C1D45D
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  border-radius: 12px
+  color: #FFFFFF
+  padding: 21px 89px 18px
+  font-weight: 700
+  font-size: 18px
+  line-height: 24px
+  margin: 20px auto 0
+
+.project-item div button:hover
+  background-color: #C0C000
+  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
