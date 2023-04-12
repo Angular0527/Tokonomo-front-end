@@ -10,6 +10,7 @@ import { StartComponent } from './start/start.component';
 import { ProjectComponent } from './project/project.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ConnectionComponent } from './connection/connection.component';
+import { EconomyComponent } from './economy/economy.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ConnectionComponent } from './connection/connection.component';
     StartComponent,
     ProjectComponent,
     FeatureComponent,
-    ConnectionComponent
+    ConnectionComponent,
+    EconomyComponent
   ],
   imports: [
     BrowserModule,

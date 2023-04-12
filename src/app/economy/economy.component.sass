@@ -1,0 +1,57 @@
+%economy-font
+  color: #363642
+  font-family: 'Neue Machina'
+  font-style: normal
+  text-align: center
+  line-height: 150%
+
+.economy-desc
+  @extend %economy-font
+  width: 480px
+  height: 120px
+  font-weight: 700
+  font-size: 40px
+  margin: 220px auto 0
+  position: relative
+
+.economy-star
+  width: 40px
+  height: 40px
+  position: absolute
+  left: 40px
+  top: 68px
+
+.economy-star:last-child
+  left: 400px
+
+.economy-star img
+  width: 100%
+  height: 100%
+
+.economy-btn
+  width: 100%
+  display: flex
+
+.economy-btn button
+  @extend %economy-font
+  width: 226px
+  height: 63px
+  background: #C1D45D
+  backdrop-filter: blur(120px)
+  border: 1px solid #C1D45D
+  border-radius: 12px
+  color: #FFFFFF
+  font-size: 18px
+  line-height: 24px
+  padding: 20px 59px 19px
+  cursor: pointer
+  margin: 40px auto 0
+
+.economy-btn button:hover
+  background-color: #C0C000
+  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
+
+.economy-imag
+  width: 632px
+  height: 461px
+  margin: 70px auto 0
