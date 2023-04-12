@@ -11,6 +11,7 @@ import { ProjectComponent } from './project/project.component';
 import { FeatureComponent } from './feature/feature.component';
 import { ConnectionComponent } from './connection/connection.component';
 import { EconomyComponent } from './economy/economy.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { EconomyComponent } from './economy/economy.component';
     ProjectComponent,
     FeatureComponent,
     ConnectionComponent,
-    EconomyComponent
+    EconomyComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
