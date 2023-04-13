@@ -25,7 +25,7 @@ import { HomeComponent } from './pages/home/home.component';
     ConnectionComponent,
     EconomyComponent,
     FooterComponent,
-    HomeComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
