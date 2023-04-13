@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { CONSTANT } from '../../constant/constant'
+import { CONSTANT } from '../../../constant/constant'
 
 @Component({
   selector: 'app-header',

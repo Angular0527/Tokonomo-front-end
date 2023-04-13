@@ -4,14 +4,15 @@ import { FormsModule } from "@angular/forms";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { TokenFrameComponent } from './token-frame/token-frame.component';
-import { StartComponent } from './start/start.component';
-import { ProjectComponent } from './project/project.component';
-import { FeatureComponent } from './feature/feature.component';
-import { ConnectionComponent } from './connection/connection.component';
-import { EconomyComponent } from './economy/economy.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './components/header/header.component';
+import { TokenFrameComponent } from './components/token-frame/token-frame.component';
+import { StartComponent } from './pages/home/start/start.component';
+import { ProjectComponent } from './pages/home/project/project.component';
+import { FeatureComponent } from './pages/home/feature/feature.component';
+import { ConnectionComponent } from './components/connection/connection.component';
+import { EconomyComponent } from './pages/home/economy/economy.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FooterComponent } from './footer/footer.component';
     FeatureComponent,
     ConnectionComponent,
     EconomyComponent,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,

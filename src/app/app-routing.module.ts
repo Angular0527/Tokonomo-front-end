@@ -1,10 +1,19 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const routes: Routes = [];
+import { HomeComponent } from './pages/home/home.component';
+
+const routes: Routes = [
+  { path: '', component: HomeComponent, },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes, {
+    useHash: false,
+    anchorScrolling: 'enabled',
+    scrollPositionRestoration: 'enabled'
+  })],
+  exports: [RouterModule],
+  declarations: []
 })
 export class AppRoutingModule { }
