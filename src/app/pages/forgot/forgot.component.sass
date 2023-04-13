@@ -1,6 +1,6 @@
-.signin-box
+.forgot-box
   width: 542px
-  height: 476px
+  height: 285px
   align-items: center
   backdrop-filter: blur(215px)
   background-color: rgba(255, 255, 255, .9)
@@ -9,10 +9,10 @@
   box-sizing: border-box
   display: flex
   flex-direction: column
-  margin: 94px auto 175px
+  margin: 94px auto 368px
   padding: 30px 50px
 
-.signin-title
+.forgot-title
   color: #171717
   font-weight: 700
   font-size: 28px
@@ -20,7 +20,7 @@
   text-align: left
   margin-bottom: 21px
 
-.signin-label
+.forgot-label
   width: 100%
   color: #8F92A1
   font-weight: 500
@@ -29,10 +29,10 @@
   margin-bottom: 10px
   text-align: left
 
-.signin-label span
+.forgot-label span
   color: #FF5B4A
 
-.sigin-input
+.forgot-input
   width: 100%
   height: 50px
   border: 1px solid rgba(143, 146, 161, 0.4)
@@ -41,34 +41,7 @@
   margin-bottom: 16px
   padding: 15px 20px 13px
 
-.signin-pwd-option
-  width: 100%
-  display: flex
-  margin-bottom: 29px
-
-.signin-pwd-check
-  width: 24px
-  height: 24px
-  border: 1px solid rgba(143, 146, 161, 0.4)
-  border-radius: 4px
-  margin-right: 8px
-
-%pwd-font
-  cursor: pointer
-  font-weight: 500
-  font-size: 16px
-  line-height: 30px
-
-.sigin-pwd-remember
-  @extend %pwd-font
-  color: #171717
-  margin-right: auto
-
-.sigin-pwd-forgot
-  @extend %pwd-font
-  color: #3772FF
-
-.signin-btn
+.forgot-btn
   width: 100%
   height: 56px
   background: #C1D45D
@@ -76,58 +49,35 @@
   border: 1px solid transparent
   border-radius: 12px
   color: white
-  font-weight: 700
-  font-size: 18px
-  line-height: 24px
-  margin-bottom: 24px
-
-.signin-btn:hover
-  background-color: #C0C000
-  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
-
-.signin-signup
-  color: #C1D45D
   cursor: pointer
   font-weight: 700
   font-size: 18px
   line-height: 24px
 
+.forgot-btn:hover
+  background-color: #C0C000
+  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
 
 // responsive ui for mobile
 @media screen and (max-width: 750px)
-  .signin-box
+  .forgot-box
     width: 347px
-    height: 390px
-    margin: 20px auto 106px
+    height: 228px
+    margin: 20px 14px 120px 14px
     padding: 20px 14px
 
-  .signin-title
+  .forgot-title
     font-size: 22px
 
-  .signin-label
+  .forgot-label
     font-size: 12px
     margin-bottom: 6px
 
-  .sigin-input
+  .forgot-input
     height: 44px
     padding: 12px 14px 10px 12px
     margin-bottom: 14px
 
-  .signin-pwd-check
-    width: 20px
-    height: 20px
-    border-radius: 4px
-
-  %pwd-font
-    font-size: 14px
-    line-height: 26px
-
-  .signin-pwd-option
-    margin-bottom: 20px
-
-  .signin-btn
+  .forgot-btn
     height: 47px
-    font-size: 16px
-
-  .signin-signup
     font-size: 16px
