@@ -7,8 +7,13 @@ const routes: Routes = [
   { path: '', component: HomeComponent },
   {
     path: 'signin',
-    loadChildren: () => import('./pages/signin/sigin.module')
-      .then(mod => mod.SiginModule)
+    loadChildren: () => import('./pages/signin/signin.module')
+      .then(mod => mod.SigninModule)
+  },
+  {
+    path: 'signup',
+    loadChildren: () => import('./pages/signup/signup.module')
+      .then(mod => mod.SignupModule)
   }
 ];
 

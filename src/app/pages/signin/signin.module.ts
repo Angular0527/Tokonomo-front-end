@@ -16,4 +16,4 @@ import { SigninRoutingModule } from "./signin-routing.module";
 
   ],
 })
-export class SiginModule { }
+export class SigninModule { }
