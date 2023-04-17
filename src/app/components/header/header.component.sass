@@ -65,6 +65,50 @@
   background-color: #C0C000
   filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
 
+.header-option-BSC
+  @extend %header-option-btn
+  min-width: 185px
+  align-items: center
+  background-color: rgb(254, 248, 234)
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  color: #F3BA2F
+  display: flex
+  padding: 13px 20px
+
+.header-option-BSC img
+  width: 24px
+  height: 24px
+  margin-right: 8px
+
+.header-option-Wallet
+  @extend %header-option-btn
+  min-width: 200px
+  align-items: center
+  background-color: #C1D45D
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  color: white
+  display: flex
+  padding: 13px 20px
+
+.header-option-Wallet:hover
+  background-color: #C0C000
+  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
+
+.header-option-Wallet img
+  margin-right: 8px
+
+.header-option-User
+  @extend %header-option-btn
+  width: 50px
+  align-items: center
+  border: 1px solid #EFEFEF
+  display: flex
+
+.header-option-User img
+  margin: 0 auto
+
 // responsive for mobile device.
 @media screen and (max-width: 750px)
   .header-option-token

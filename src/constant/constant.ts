@@ -4,6 +4,15 @@ export const CONSTANT = {
   LOGO_INFO_URL: BASIC_URL + "logo.svg",
   LOGO_INFO_ALT: "site logo",
 
+  HEADER_BSC_URL: BASIC_URL + "fi_header_BSC.svg",
+  HEADER_BSC_ALT: "image of BSC",
+
+  HEADER_WALLET_URL: BASIC_URL + "fi_header_wallet.svg",
+  HEADER_WALLET_ALT: "image of wallet",
+
+  HEADER_USER_URL: BASIC_URL + "fi_header_user.svg",
+  HEADER_USER_ALT: "image of user",
+
   FEATURE_PORTFOLIO_URL: BASIC_URL + "fi_feature_investor_portfolio.svg",
   FEATURE_PORTFOLIO_ALT: "portfolio for investor",
 
