@@ -33,6 +33,12 @@ export const CONSTANT = {
   DASHBOARD_URL: BASIC_URL + "fi_dashboard-dashboard.svg",
   DASHBOARD_ALT: "image of dashboard",
 
+  DASHBOARD_ANN_URL: BASIC_URL + "fi_dash_ann.svg",
+  DASHBOARD_ANN_ALT: "image of announcement",
+
+  DASHBOARD_VECTOR_URL: BASIC_URL + "fi_dashboard_vector.svg",
+  DASHBOARD_VECTOR_ALT: "image of vector",
+
   FOOTER_CONTENT: "Disclaimer: The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published. © 2021"
 };
 
