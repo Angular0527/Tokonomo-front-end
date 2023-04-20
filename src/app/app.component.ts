@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CONSTANT} from "../constant/constant";
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'TOKONOMO';
+
+  isSignIn = CONSTANT.IS_SIGN_IN;
 }

@@ -1,9 +1,21 @@
 <app-header></app-header>
 
-<app-token-frame></app-token-frame>
+<div class="container">
+  <div class="nav-bar" *ngIf="isSignIn">
+    <ul class="nav-bar-list">
+      <li class="nav-select-item"><span class="dashboard-item"></span>Dashboard</li>
+      <li><span class="launch-item"></span>Launchpad<i class="pi pi-caret-right"></i></li>
+      <li><span class="locker-item"></span>Locker<i class="pi pi-caret-right"></i></li>
+      <li><span class="account-item"></span>Your Account</li>
+      <li><span class="docs-item"></span>Docs</li>
+    </ul>
+  </div>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+  <div class="content">
+    <app-token-frame></app-token-frame>
+
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
 <app-footer></app-footer>

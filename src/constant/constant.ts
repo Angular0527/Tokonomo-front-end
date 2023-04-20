@@ -1,6 +1,8 @@
 const BASIC_URL = "../../assets/";
 
 export const CONSTANT = {
+  IS_SIGN_IN: true,
+
   LOGO_INFO_URL: BASIC_URL + "logo.svg",
   LOGO_INFO_ALT: "site logo",
 

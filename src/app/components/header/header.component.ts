@@ -27,5 +27,5 @@ export class HeaderComponent {
     alt: CONSTANT.HEADER_USER_ALT
   }
 
-  isSignIn = true;
+  isSignIn = CONSTANT.IS_SIGN_IN;
 }
