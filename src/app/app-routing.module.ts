@@ -20,6 +20,11 @@ const routes: Routes = [
     path: 'forgot',
     loadChildren: () => import('./pages/forgot/forgot.module')
       .then(mod => mod.ForgotModule)
+  },
+  {
+    path: 'dashboard',
+    loadChildren: () => import('./pages/dashboard/dashboard.module')
+      .then(mod => mod.DashboardModule)
   }
 ];
 

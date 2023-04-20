@@ -11,11 +11,11 @@
     </ul>
   </div>
 
-  <div class="content">
+  <div [ngClass]="isSignIn ? 'short-content' : 'content'">
     <app-token-frame></app-token-frame>
 
     <router-outlet></router-outlet>
   </div>
 </div>
 
-<app-footer></app-footer>
+<app-footer *ngIf="!isSignIn"></app-footer>

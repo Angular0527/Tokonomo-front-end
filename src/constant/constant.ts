@@ -30,6 +30,9 @@ export const CONSTANT = {
   FEATURE_LOCK_URL: BASIC_URL + "fi_feature_lock.svg",
   FEATURE_LOCK_ALT: "image of lock",
 
+  DASHBOARD_URL: BASIC_URL + "fi_dashboard-dashboard.svg",
+  DASHBOARD_ALT: "image of dashboard",
+
   FOOTER_CONTENT: "Disclaimer: The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published. © 2021"
 };
 
