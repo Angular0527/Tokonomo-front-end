@@ -22,6 +22,26 @@ export class DashboardComponent {
     alt: CONSTANT.DASHBOARD_VECTOR_ALT
   }
 
+  dashboard_ido_image = {
+    url: CONSTANT.DASHBOARD_IDO_URL,
+    alt: CONSTANT.DASHBOARD_ALT
+  }
+
+  dashboard_ido_pencil_image = {
+    url: CONSTANT.DASHBOARD_IDO_PENCIL_URL,
+    alt: CONSTANT.DASHBOARD_IDO_PENCIL_ALT
+  }
+
+  dashboard_ido_start_image = {
+    url: CONSTANT.DASHBOARD_IDO_START_URL,
+    alt: CONSTANT.DASHBOARD_IDO_START_ALT
+  }
+
+  dashboard_ido_up_image = {
+    url: CONSTANT.DASHBOARD_IDO_UP_URL,
+    alt: CONSTANT.DASHBOARD_IDO_UP_ALT
+  }
+
   pro_item_list = [
     {}
   ];
