@@ -13,6 +13,7 @@ import { ConnectionComponent } from './components/connection/connection.componen
 import { EconomyComponent } from './pages/home/economy/economy.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { NavBarComponent } from './components/nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { HomeComponent } from './pages/home/home.component';
     EconomyComponent,
     FooterComponent,
     HomeComponent,
+    NavBarComponent,
   ],
   imports: [
     BrowserModule,

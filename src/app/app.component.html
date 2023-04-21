@@ -1,15 +1,7 @@
 <app-header></app-header>
 
 <div class="container">
-  <div class="nav-bar" *ngIf="isSignIn">
-    <ul class="nav-bar-list">
-      <li class="nav-select-item"><span class="dashboard-item"></span>Dashboard</li>
-      <li><span class="launch-item"></span>Launchpad<i class="pi pi-caret-right"></i></li>
-      <li><span class="locker-item"></span>Locker<i class="pi pi-caret-right"></i></li>
-      <li><span class="account-item"></span>Your Account</li>
-      <li><span class="docs-item"></span>Docs</li>
-    </ul>
-  </div>
+  <app-nav-bar></app-nav-bar>
 
   <div [ngClass]="isSignIn ? 'short-content' : 'content'">
     <app-token-frame></app-token-frame>
