@@ -60,6 +60,9 @@ export const CONSTANT = {
   DASHBOARD_IDO_UP_URL: BASIC_URL + "fi_dash_up.svg",
   DASHBOARD_IDO_UP_ALT: "image of upcomming",
 
+  DASHBOARD_LAUNCH_LOGO_URL: BASIC_URL + "fi_launch_logo.svg",
+  DASHBOARD_LAUNCH_LOGO_ALT: "image of launch logo",
+
   FOOTER_CONTENT: "Disclaimer: The information provided shall not in any way constitute a recommendation as to whether you should invest in any product discussed. We accept no liability for any loss occasioned to any person acting or refraining from action as a result of any material provided or published. © 2021"
 };
 

@@ -1,7 +1,12 @@
 <div class="nav-bar" *ngIf="isSignIn">
   <ul class="nav-bar-list">
     <li class="nav-select-item"><span class="dashboard-item"></span>Dashboard</li>
-    <li><span class="launch-item"></span>Launchpad<i class="pi pi-caret-right"></i></li>
+     <li (click)="selectedItem()"><span class="launch-item"></span>Launchpad<i class="pi pi-caret-right"></i></li>
+      <ul class="nav-bar-sub-list">
+        <li routerLink="/launch_ido"><span class="sub-launch-item"><span></span></span>launch IDO</li>
+        <li>Manage IDO</li>
+        <li>Tokens List</li>
+      </ul>
     <li><span class="locker-item"></span>Locker<i class="pi pi-caret-right"></i></li>
     <li><span class="account-item"></span>Your Account</li>
     <li><span class="docs-item"></span>Docs</li>

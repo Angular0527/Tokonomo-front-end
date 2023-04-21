@@ -25,6 +25,11 @@ const routes: Routes = [
     path: 'dashboard',
     loadChildren: () => import('./pages/dashboard/dashboard.module')
       .then(mod => mod.DashboardModule)
+  },
+  {
+    path: 'launch_ido',
+    loadChildren: () => import('./pages/launch-ido/launch-ido.module')
+      .then(mod => mod.LaunchIdoModule)
   }
 ];
 

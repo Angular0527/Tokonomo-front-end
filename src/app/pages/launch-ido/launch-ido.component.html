@@ -1,0 +1,43 @@
+<div class="launch-container">
+  <div class="launch-logo">
+    <img [src]="launch_logo_image.url" [alt]="launch_logo_image.alt">
+    Launch IDO
+  </div>
+
+  <div class="launch-progress">
+    <div class="launch-progress-token">
+      <div class="launch-progress-token-id">1</div>
+      <span class="launch-progress-token-title">Verify Token</span><br>
+      <span class="launch-progress-token-desc">Enter the token address and verify</span>
+
+      <div class="launch-connection-color">
+        <div class="launch-connection-color-dot1"></div>
+        <div class="launch-connection-hr"></div>
+        <div class="launch-connection-color-dot2"></div>
+      </div>
+    </div>
+
+    <div class="launch-progress-item" *ngFor="let item of launch_progress_item">
+      <div class="launch-progress-item-id">{{item.id}}</div>
+      <span class="launch-progress-item-title">{{item.title}}</span><br>
+      <span class="launch-progress-item-desc">{{item.desc}}</span>
+
+      <div class="launch-connection-item" *ngIf="item.connect == 1">
+        <div class="launch-connection-item-dot"></div>
+        <div class="launch-connection-item-hr"></div>
+        <div class="launch-connection-item-dot"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="launch-token-address">
+    <div class="launch-token-address-label">Token address <span>*</span></div>
+    <input class="launch-token-address-input" placeholder="For example (dsbfe3443lkxoewrnerncx43nfmv43o43)">
+  </div>
+
+  <div class="launch-token-desc">
+    Current Fees 1 BNB + 2% of Tokens sold + 2% of BNB Raised
+  </div>
+
+  <div class="launch-next-btn">Next</div>
+</div>
