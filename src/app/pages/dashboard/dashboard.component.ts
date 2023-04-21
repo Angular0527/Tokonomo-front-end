@@ -17,6 +17,21 @@ export class DashboardComponent {
     alt: CONSTANT.DASHBOARD_ANN_ALT
   }
 
+  dashboard_promote_1_image = {
+    url: CONSTANT.DASHBOARD_PROMOTE_1_URL,
+    alt: CONSTANT.DASHBOARD_PROMOTE_1_ALT
+  }
+
+  dashboard_promote_2_image = {
+    url: CONSTANT.DASHBOARD_PROMOTE_2_URL,
+    alt: CONSTANT.DASHBOARD_PROMOTE_2_ALT
+  }
+
+  dashboard_promote_3_image = {
+    url: CONSTANT.DASHBOARD_PROMOTE_3_URL,
+    alt: CONSTANT.DASHBOARD_PROMOTE_3_ALT
+  }
+
   dashboard_vector_image = {
     url: CONSTANT.DASHBOARD_VECTOR_URL,
     alt: CONSTANT.DASHBOARD_VECTOR_ALT

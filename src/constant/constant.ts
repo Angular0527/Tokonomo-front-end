@@ -36,6 +36,15 @@ export const CONSTANT = {
   DASHBOARD_ANN_URL: BASIC_URL + "fi_dash_ann.svg",
   DASHBOARD_ANN_ALT: "image of announcement",
 
+  DASHBOARD_PROMOTE_1_URL: BASIC_URL + "fi_dash_promote_1.svg",
+  DASHBOARD_PROMOTE_1_ALT: "image of promote",
+
+  DASHBOARD_PROMOTE_2_URL: BASIC_URL + "fi_dash_promote_2.svg",
+  DASHBOARD_PROMOTE_2_ALT: "image of promote",
+
+  DASHBOARD_PROMOTE_3_URL: BASIC_URL + "fi_dash_promote_3.svg",
+  DASHBOARD_PROMOTE_3_ALT: "image of promote",
+
   DASHBOARD_VECTOR_URL: BASIC_URL + "fi_dashboard_vector.svg",
   DASHBOARD_VECTOR_ALT: "image of vector",
 
