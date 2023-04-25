@@ -1,0 +1,23 @@
+<div class="signin-box">
+  <div class="signin-title">Log In</div>
+
+  <div class="signin-label">Your Email <span>*</span></div>
+
+  <input type="text" class="sigin-input" placeholder="Your Email">
+
+  <div class="signin-label">Password <span>*</span></div>
+
+  <input type="password" class="sigin-input" placeholder="Password">
+
+  <div class="signin-pwd-option">
+    <input type="checkbox" name="pwd-check" class="signin-pwd-check" [checked]="pwd_check">
+
+    <span class="sigin-pwd-remember" (click)="pwd_check = !pwd_check">Remember me</span>
+
+    <span class="sigin-pwd-forgot" routerLink="/forgot">Forgot your password?</span>
+  </div>
+
+  <button class="signin-btn" routerLink="/dashboard">Log In</button>
+
+  <span class="signin-signup" routerLink="/signup">Sign Up</span>
+</div>

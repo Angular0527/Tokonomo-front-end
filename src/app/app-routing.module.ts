@@ -1,45 +1,78 @@
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
-import { HomeComponent } from './pages/home/home.component';
-import {ForgotModule} from "./pages/forgot/forgot.module";
+import { DefaultLayoutComponent } from './containers';
+import { LandingPageComponent } from "./views/landing-page/landing-page.component";
+import { SigninComponent } from "./views/signin/signin.component";
+import {SignupComponent} from "./views/signup/signup.component";
+import {ForgotComponent} from "./views/forgot/forgot.component";
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  {
+    path: '',
+    redirectTo: 'landing',
+    pathMatch: 'full'
+  },
+  {
+    path: '',
+    component: DefaultLayoutComponent,
+    data: {
+      title: 'Dashboard'
+    },
+    children: [
+      {
+        path: 'dashboard',
+        loadChildren: () =>
+          import('./views/dashboard/dashboard.module').then((m) => m.DashboardModule)
+      },
+      {
+        path: 'launchpad',
+        loadChildren: () =>
+          import('./views/launch/launch.module').then((m) => m.LaunchModule)
+      },
+    ]
+  },
+  {
+    path: 'landing',
+    component: LandingPageComponent,
+    data: {
+      title: 'Landing Page'
+    }
+  },
   {
     path: 'signin',
-    loadChildren: () => import('./pages/signin/signin.module')
-      .then(mod => mod.SigninModule)
+    component: SigninComponent,
+    data: {
+      title: 'Signin Page'
+    }
   },
   {
     path: 'signup',
-    loadChildren: () => import('./pages/signup/signup.module')
-      .then(mod => mod.SignupModule)
+    component: SignupComponent,
+    data: {
+      title: 'Signup Page'
+    }
   },
   {
     path: 'forgot',
-    loadChildren: () => import('./pages/forgot/forgot.module')
-      .then(mod => mod.ForgotModule)
+    component: ForgotComponent,
+    data: {
+      title: 'Forgot Page'
+    }
   },
-  {
-    path: 'dashboard',
-    loadChildren: () => import('./pages/dashboard/dashboard.module')
-      .then(mod => mod.DashboardModule)
-  },
-  {
-    path: 'launch_ido',
-    loadChildren: () => import('./pages/launch-ido/launch-ido.module')
-      .then(mod => mod.LaunchIdoModule)
-  }
+  {path: '**', redirectTo: 'landing'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes, {
-    useHash: false,
-    anchorScrolling: 'enabled',
-    scrollPositionRestoration: 'enabled'
-  })],
-  exports: [RouterModule],
-  declarations: []
+  imports: [
+    RouterModule.forRoot(routes, {
+      scrollPositionRestoration: 'top',
+      anchorScrolling: 'enabled',
+      initialNavigation: 'enabledBlocking'
+      // relativeLinkResolution: 'legacy'
+    })
+  ],
+  exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+}

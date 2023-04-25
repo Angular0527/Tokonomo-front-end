@@ -1,0 +1,101 @@
+.start-large-text
+  width: 759px
+  height: 192px
+  font-size: 64px
+  font-weight: 700
+  line-height: 150%
+  margin: 66px auto 0 auto
+  position: relative
+
+.start-large-text img
+  width: 359px
+  height: 100.01px
+  position: absolute
+  bottom: -1%
+  right: 11%
+  z-index: -1
+
+.start-small-text
+  font-weight: 400
+  font-size: 22px
+  line-height: 180%
+
+.start-option
+  display: flex
+  margin-top: 40px
+
+%start-option-button
+  width: 226px
+  height: 63px
+  border-radius: 12px
+  cursor: pointer
+  font-weight: 700
+  font-size: 18px
+  line-height: 24px
+  text-align: center
+
+.start-option button:first-child
+  @extend %start-option-button
+  background: #C1D45D
+  backdrop-filter: blur(120px)
+  border: 1px solid transparent
+  color: #FFFFFF
+  padding: 21px 59px 18px 59px
+  margin-left: auto
+  margin-right: 24px
+  filter: drop-shadow(5px 5px 22px rgba(193, 212, 93, 0.8))
+
+.start-option button:first-child:hover
+  background-color: #C0C000
+
+.start-option button:last-child
+  @extend %start-option-button
+  border: 1.5px solid #C1D45D
+  color: #C1D45D
+  margin-right: auto
+
+.start-option button:last-child:hover
+  background-color: #F7F7F7
+
+.start-dashboard
+  width: 100%
+  margin-top: 66px
+  display: flex
+
+.start-dashboard img
+  width: 1009.4px
+  height: 597.19px
+  margin-left: auto
+  margin-right: auto
+
+// responsive for mobile device.
+@media screen and (max-width: 750px)
+  .start-large-text
+    width: 311px
+    height: 84px
+    margin: 51px auto 0 auto
+    font-size: 28px
+
+  .start-small-text
+    font-size: 18px
+
+  .start-large-text img
+    width: 151.02px
+    height: 43.25px
+
+  %start-option-button
+    width: 154px
+    height: 47px
+    font-size: 16px
+    padding: 13px 29px 10px 29px
+    line-height: 24px
+
+  .start-option
+    margin-top: 24px
+
+  .start-dashboard
+    margin-top: 40.4px
+
+  .start-dashboard img
+    width: 362.84px
+    height: 214.67px

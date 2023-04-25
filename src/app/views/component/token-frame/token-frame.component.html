@@ -1,0 +1,14 @@
+<div class="token-frame-area">
+  <div class="token-frame-label">
+    <div class="token-frame-label-vector">
+      <img [src]="trending_img_info.url" [alt]="trending_img_info.alt">
+    </div>
+
+    <span>Trending</span>
+  </div>
+
+  <div class="token-item" *ngFor="let token_item of token_item_list">
+    <span class="token-item-id">#{{token_item.id + 1}}</span>
+    <span class="token-item-name">{{token_item.name}}</span>
+  </div>
+</div>

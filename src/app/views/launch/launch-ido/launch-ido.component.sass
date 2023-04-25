@@ -1,0 +1,180 @@
+.launch-container
+  min-width: 1126px
+  height: 542px
+  background: rgba(255, 255, 255, 0.9)
+  border: 1px solid rgba(237, 237, 237, 0.4)
+  backdrop-filter: blur(215px)
+  border-radius: 16px
+  margin: 25px 32px
+  padding: 30px
+
+.launch-logo
+  display: flex
+  font-weight: 799
+  font-size: 28px
+  line-height: 150%
+  color: #171717
+
+.launch-logo img
+  width: 42px
+  height: 42px
+  background: #C1D45D
+  box-shadow: 2px 2px 12px rgba(193, 212, 93, 0.8)
+  border-radius: 12px
+  box-sizing: border-box
+  align-items: center
+  justify-content: center
+  margin-right: 14px
+  padding: 9px
+
+.launch-progress
+  min-width: 1067px
+  height: 128px
+  display: flex
+  margin-top: 30px
+
+.launch-progress-token
+  min-width: 209px
+  height: 110px
+  align-items: center
+  margin-right: 77px
+  position: relative
+
+%progress-circle
+  width: 50px
+  height: 50px
+  border-radius: 50%
+  box-sizing: border-box
+  font-weight: 700
+  font-size: 28px
+  line-height: 150%
+  margin: 0 auto 15px
+  padding: 4px
+  text-align: center
+
+.launch-progress-token-id
+  @extend %progress-circle
+  background-color: #C1D45D
+  box-shadow: 5px 5px 22px rgba(193, 212, 93, 0.8)
+  color: #FFFFFF
+
+%progress-title-font
+  font-weight: 700
+  font-size: 14px
+  line-height: 150%
+  text-align: center
+
+.launch-progress-token-title
+  @extend %progress-title-font
+  color: #171717
+
+.launch-progress-token-desc,
+.launch-progress-item-desc
+  color: #8F92A1
+  font-weight: 400
+  font-size: 12px
+  line-height: 150%
+
+.launch-progress-item
+  min-width: 209px
+  height: 128px
+  align-items: center
+  margin-right: 77px
+  position: relative
+
+.launch-progress-item-id
+  @extend %progress-circle
+  background-color: rgba(143, 146, 161, 0.4)
+  color: #8F92A1
+
+.launch-progress-item-title
+  @extend %progress-title-font
+  color: #8F92A1
+
+.launch-token-address
+  width: 100%
+  text-align: left
+
+.launch-token-address-label
+  color: #8F92A1
+  font-weight: 500
+  font-size: 16px
+  line-height: 22px
+  margin-top: 40px
+  margin-bottom: 10px
+
+.launch-token-address-label span
+  color: #FF5B4A
+
+.launch-token-address-input,
+.launch-token-desc
+  min-width: 1066px
+  height: 50px
+  border: 1px solid rgba(143, 146, 161, 0.4)
+  border-radius: 12px
+  box-sizing: border-box
+  padding: 15px 20px 13px
+
+.launch-token-desc
+  width: 1066px
+  background-color: rgba(243, 186, 47, 0.1)
+  color: #171717
+  font-weight: 500
+  font-size: 14px
+  line-height: 22px
+  text-align: left
+  margin-top: 16px
+
+.launch-next-btn
+  width: 207px
+  height: 56px
+  background: #C1D45D
+  backdrop-filter: blur(120px)
+  border-radius: 12px
+  box-sizing: border-box
+  color: white
+  padding: 17px 66px
+  font-weight: 700
+  font-size: 18px
+  line-height: 24px
+  margin: 24px auto 0
+
+.launch-connection-color,
+.launch-connection-item
+  display: flex
+  position: absolute
+  left: 169px
+  top: 17px
+
+%circle
+  width: 16px !important
+  height: 16px !important
+  border-radius: 50%
+  box-sizing: border-box
+
+.launch-connection-color-dot1
+  @extend %circle
+  background: #C1D45D
+  box-shadow: 5px 5px 22px rgba(193, 212, 93, 0.8)
+
+.launch-connection-hr
+  width: 125px
+  height: 0
+  border: 1px solid #C1D45D
+  margin-top: 7px
+
+.launch-connection-color-dot2
+  @extend %circle
+  background-color: white
+  border: 1px solid #C1D45D
+
+.launch-connection-item-dot
+  @extend %circle
+  background-color: white
+  border: 1px solid rgba(143, 146, 161, 0.4)
+
+.launch-connection-item-hr
+  width: 125px
+  height: 0
+  border: 1px solid rgba(143, 146, 161, 0.4)
+  margin-top: 7px
