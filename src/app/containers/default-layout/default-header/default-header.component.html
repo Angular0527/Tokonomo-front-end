@@ -12,42 +12,25 @@
         size="lg"
       ></svg>
     </button>
-    <c-header-nav class="d-none d-lg-flex me-auto">
-      <c-nav-item>
-        <a cNavLink routerLink="/dashboard" routerLinkActive="active">
-          Dashboard
-        </a>
-      </c-nav-item>
-      <c-nav-item>
-        <a cNavLink routerLink="/users" routerLinkActive="active">Users</a>
-      </c-nav-item>
-      <c-nav-item>
-        <a cNavLink routerLink="/settings" routerLinkActive="active">
-          Settings
-        </a>
-      </c-nav-item>
-    </c-header-nav>
 
-    <c-header-nav class="d-none d-lg-flex">
-      <c-nav-item>
-        <a routerLink="./" cNavLink>
-          <svg cIcon name="cilBell" size="lg"></svg>
-        </a>
-      </c-nav-item>
-      <c-nav-item>
-        <a routerLink="./" cNavLink>
-          <svg cIcon name="cilList" size="lg"></svg>
-        </a>
-      </c-nav-item>
-      <c-nav-item>
-        <a routerLink="./" cNavLink>
-          <svg cIcon name="cilEnvelopeOpen" size="lg"></svg>
-        </a>
-      </c-nav-item>
-    </c-header-nav>
-    <c-header-nav class="ms-3">
+    <div class="header-option">
+      <button class="header-option-BSC">
+        <img [src]="bsc_info.url" [alt]="bsc_info.alt">
+        BSC Mainnet
+      </button>
+
+      <button class="header-option-Wallet">
+        <img [src]="wallet_info.url" [alt]="wallet_info.alt">
+        xzcW/x...434ND
+      </button>
+
+      <button class="header-option-User">
+        <img [src]="user_info.url" [alt]="user_info.alt">
+      </button>
+    </div>
+    <!--<c-header-nav class="ms-3">
       <ng-container *ngTemplateOutlet="userDropdown"></ng-container>
-    </c-header-nav>
+    </c-header-nav>-->
 
   </c-container>
   <!--<c-header-divider></c-header-divider>-->
